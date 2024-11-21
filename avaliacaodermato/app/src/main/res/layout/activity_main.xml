@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B76976"
+    android:gravity="center"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="335dp"
+        android:layout_height="326dp"
+        app:srcCompat="@drawable/photo_2024_11_21_16_28_16"
+        tools:srcCompat="@drawable/photo_2024_11_21_16_28_16" />
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Bem-vindo à Avaliação Dermatológica"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <!-- Campo para o nome do paciente -->
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite seu nome"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:textColorHint="#CCCCCC"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Avaliação"
+        android:backgroundTint="#d1b23a"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

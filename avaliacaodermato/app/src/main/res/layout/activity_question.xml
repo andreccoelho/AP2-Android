@@ -1,0 +1,126 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/question"
+    android:background="#B76976">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B76976"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Responda as perguntas abaixo:"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <!-- Pergunta 1 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="1. Qual o nível de oleosidade da sua pele?"
+            android:textColor="#FFFFFF" />
+
+        <SeekBar
+            android:id="@+id/seekBarOiliness"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:max="10"
+            android:progressBackgroundTint="#CCCCCC"
+            android:progressTint="#FFFFFF"
+            android:thumbTint="#FFFFFF" />
+
+        <!-- Pergunta 2 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="2. Você usa protetor solar diariamente?"
+            android:textColor="#FFFFFF" />
+
+        <Switch
+            android:id="@+id/switchSunscreen"
+            android:layout_width="87dp"
+            android:layout_height="81dp"
+            android:thumbTint="#FFFFFF"
+            android:trackTint="#CCCCCC" />
+
+        <!-- Pergunta 3 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="3. Qual a sua rotina de cuidados?"
+            android:textColor="#FFFFFF" />
+
+        <Spinner
+            android:id="@+id/spinnerRoutine"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:backgroundTint="#FFFFFF"
+            android:popupBackground="#FFFFFF" />
+
+        <!-- Pergunta 4 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="4. Com que frequência você limpa o rosto por dia?"
+            android:textColor="#FFFFFF" />
+
+        <Spinner
+            android:id="@+id/spinnerCleaningFrequency"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:backgroundTint="#FFFFFF"
+            android:popupBackground="#FFFFFF" />
+
+        <!-- Pergunta 5 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="5. Qual o tipo da sua pele?"
+            android:textColor="#FFFFFF" />
+
+        <Spinner
+            android:id="@+id/spinnerSkinType"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:backgroundTint="#FFFFFF"
+            android:popupBackground="#FFFFFF" />
+
+        <!-- Pergunta 6 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="6. Qual a frequência de exposição ao sol?"
+            android:textColor="#FFFFFF" />
+
+        <Spinner
+            android:id="@+id/spinnerSunExposure"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:backgroundTint="#FFFFFF"
+            android:popupBackground="#FFFFFF" />
+
+        <!-- Botão de envio -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#d1b23a"
+            android:text="Ver Resultado"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

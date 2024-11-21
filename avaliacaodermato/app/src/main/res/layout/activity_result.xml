@@ -1,0 +1,35 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B76976"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="318dp"
+            android:layout_height="381dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/photo_2024_11_21_16_28_16"
+            tools:src="@drawable/photo_2024_11_21_16_28_16" />
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:gravity="start"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>
