@@ -31,5 +31,15 @@
             android:gravity="start"
             android:layout_marginBottom="16dp" />
 
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#d1b23a"
+            android:text="Ver no Instagram"
+            android:textColor="#FFFFFF" />
+
+
     </LinearLayout>
 </ScrollView>

@@ -4,6 +4,10 @@ import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import android.content.Intent
+import android.net.Uri
+import android.widget.Button
+
 
 class ResultActivity : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
@@ -83,5 +87,15 @@ class ResultActivity : AppCompatActivity() {
 
         // Exibir o resultado no TextView
         resultTextView.text = resultMessage
+
+        // Configuração do botão para redirecionar ao Instagram
+        val btnSubmit: Button = findViewById(R.id.btnSubmit)
+        btnSubmit.setOnClickListener {
+            val intent = Intent(
+                Intent.ACTION_VIEW,
+                Uri.parse("https://www.instagram.com/andreacostadermato/")
+            )
+            startActivity(intent)
+        }
     }
 }
